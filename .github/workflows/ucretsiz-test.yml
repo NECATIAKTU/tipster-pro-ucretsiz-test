@@ -1,0 +1,14 @@
+
+name: Ucretsiz Actions Testi
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Python kontrolu
+        run: |
+          python3 --version
+          echo "TIPSTER PRO ucretsiz test basarili"
